@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  streamlit:
+    build: 
+      context: ./streamlit
+      dockerfile: Dockerfile
+    container_name: my_streamlit
+    # do not publicly expose port 8501, only use for debugging
+    # ports:
+    #   - "8501:8501"
+  web:
+    build: 
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: my_nginx
+    ports:
+      - "8080:80"
