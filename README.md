@@ -2,6 +2,8 @@
 
 Reverse-proxy NGinx doing Basic Authentication, passing Auth user through Websocket headers and Streamlit extracting auth login from websocket headers to customize page per user logging in.
 
+![](./demo.mp4)
+
 ## Run
 
 ```sh
